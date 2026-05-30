@@ -1,0 +1,31 @@
+/* --- GIAO DIỆN KHU VỰC DANH MỤC --- */
+.category-block { margin-bottom: 70px; }
+.category-header-title {
+    font-size: 18px; color: var(--accent-gold); text-transform: uppercase;
+    margin-bottom: 30px; letter-spacing: 2px; font-weight: 600;
+    border-left: 2px solid var(--accent-gold); padding-left: 15px;
+}
+
+/* Ép cấu trúc Grid cố định kích thước ô, chống tràn kéo giãn */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.product-item {
+    background: var(--bg-card); border: 1px solid rgba(255,255,255,0.03);
+    padding: 24px; border-radius: 8px; text-align: center;
+    transition: var(--transition);
+    max-width: 320px; /* Khống chế tuyệt đối không bị to bự ngang */
+    width: 100%;
+}
+.product-item:hover { transform: translateY(-6px); border-color: var(--accent-gold); box-shadow: 0 15px 30px rgba(0,0,0,0.5); }
+
+.product-thumb {
+    height: 200px; background-size: cover; background-position: center;
+    margin-bottom: 20px; border-radius: 4px; background-color: #2a2a2a;
+}
+.product-name { font-size: 15px; margin-bottom: 10px; font-weight: 400; color: var(--text-light); letter-spacing: 0.5px; }
+.product-price { color: var(--accent-gold); margin-bottom: 20px; font-weight: 600; font-size: 14px; }
+.product-item .btn { width: 100%; text-align: center; }
