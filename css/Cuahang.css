@@ -1,0 +1,19 @@
+/* --- TRANG CỬA HÀNG - THEME DARK KHÔNG GIAN SANG TRỌNG --- */
+.store-header { text-align: center; margin-bottom: 50px; }
+.store-header h1 { color: var(--text-light); font-size: 28px; font-weight: 400; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 3px; }
+.store-header p { color: var(--accent-gold); font-style: italic; font-size: 14px; letter-spacing: 0.5px; }
+
+.branch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; }
+.branch-card { background-color: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.03); border-radius: 8px; padding: 35px; transition: var(--transition); }
+.branch-card:hover { border-color: var(--accent-gold); transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.4); }
+
+.branch-card h3 { color: var(--accent-gold); font-size: 20px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+.branch-info { color: var(--text-gray); font-size: 14px; line-height: 1.8; margin-bottom: 30px; }
+.branch-info p { margin-bottom: 8px; }
+
+.branch-buttons { display: flex; gap: 15px; }
+.btn-br { flex: 1; padding: 12px; font-size: 11px; font-weight: 600; text-align: center; border-radius: 4px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: var(--transition); }
+.btn-map { background-color: var(--accent-gold); color: var(--bg-dark); }
+.btn-map:hover { background-color: #bfa075; }
+.btn-dir { border: 1px solid var(--accent-gold); color: var(--accent-gold); background: transparent; }
+.btn-dir:hover { background-color: rgba(197, 168, 128, 0.08); }

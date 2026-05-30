@@ -1,0 +1,7 @@
+/* --- TRANG TÀI KHOẢN --- */
+.account-card { background: var(--bg-card); max-width: 400px; margin: 60px auto; padding: 40px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03); }
+.account-card h2 { font-size: 18px; font-weight: 400; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 25px; text-align: center; color: var(--accent-gold); }
+.account-form { display: flex; flex-direction: column; gap: 15px; }
+.account-form input { background: #121212; border: 1px solid rgba(255,255,255,0.1); padding: 12px; border-radius: 4px; color: #fff; font-size: 13px; outline: none; transition: var(--transition); }
+.account-form input:focus { border-color: var(--accent-gold); }
+.account-form button { margin-top: 10px; padding: 12px; cursor: pointer; }
