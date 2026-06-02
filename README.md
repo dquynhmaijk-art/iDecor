@@ -154,6 +154,7 @@ GitHub Pages chỉ phục vụ:
 * Hình ảnh
 * File tĩnh
 
+-link dữ liệu: https://docs.google.com/spreadsheets/d/1d5k6fgQ4NabeVkneeQqTHdH2B9sezL7XMre4AODoAMs/edit?gid=597811862#gid=597811862
 Không hỗ trợ trực tiếp:
 
 * NodeJS Server
