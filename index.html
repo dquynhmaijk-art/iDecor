@@ -1,104 +1,229 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iDECOR - Kiến Trúc & Nội Thất Cao Cấp</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .hero { height: 75vh; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; padding: 0 8%; }
-        .hero h1 { font-size: 56px; font-weight: 300; letter-spacing: 5px; margin-bottom: 20px; color: #fff; }
-        .hero p { color: var(--text-gray); max-width: 500px; margin-bottom: 30px; line-height: 1.6; }
-    </style>
+
+    <title>iDECOR - Nội Thất Cao Cấp</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+
 </head>
+
 <body>
 
-    <header>
-        <a href="index.html" class="logo">i<span>DECOR</span></a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Trang Chủ</a></li>
-                <li><a href="pages/Gioithieu.html">Giới Thiệu</a></li>
-                <li class="dropdown">
-                    <a href="pages/Danhmuc.html">Danh Mục Sản Phẩm</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="pages/Danhmuc.html#minimalist">Bộ Sưu Tập Minimalist</a></li>
-                        <li><a href="pages/Danhmuc.html#scandinavian">Bộ Sưu Tập Bắc Âu</a></li>
-                        <li><a href="pages/Danhmuc.html#classic">Bộ Sưu Tập Tân Cổ Điển</a></li>
-                    </ul>
-                </li>
-                <li><a href="pages/Cuahang.html">Cửa Hàng</a></li>
-            </ul>
+    <header class="header">
+
+        <a href="#/trang-chu" class="logo">
+            i<span>DECOR</span>
+        </a>
+
+        <nav class="navbar">
+
+            <a href="#/trang-chu" class="active">
+                Trang Chủ
+            </a>
+
+            <a href="#/gioi-thieu">
+                Giới Thiệu
+            </a>
+
+            <div class="product-menu">
+
+                <a href="#/san-pham">
+                    Sản Phẩm
+                </a>
+
+                <div
+                    class="product-dropdown"
+                    id="productDropdown"
+                >
+                    <!-- JS render -->
+                </div>
+
+            </div>
+
+            <a href="#/cua-hang">
+                Cửa Hàng
+            </a>
+
+            <a href="#/khach-hang">
+                Khách Hàng
+            </a>
+
         </nav>
-        <div class="nav-icons">
-            <a href="pages/Taikhoan.html">Tài Khoản</a>
-            <a href="pages/Giohang.html">Giỏ Hàng</a>
+
+        <div class="nav-actions">
+
+            <a href="#/gio-hang">
+                Giỏ Hàng
+            </a>
+
+            <div
+                class="account-menu"
+                id="accountMenu"
+            >
+
+                <a
+                    href="#/dang-nhap"
+                    id="accountLink"
+                >
+                    Tài Khoản
+                </a>
+
+                <div
+                    class="account-dropdown"
+                    id="accountDropdown"
+                >
+
+                    <a href="#/thong-tin-khach-hang">
+                        Thông tin khách hàng
+                    </a>
+
+                    <a href="#/doi-mat-khau">
+                        Đổi mật khẩu
+                    </a>
+
+                    <a
+                        href="#"
+                        id="logoutBtn"
+                    >
+                        Đăng xuất
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
+
     </header>
 
-    <main>
-        <div class="page-animation">
-            <div class="hero">
-                <h1>CREATE COMFORT</h1>
-                <p>Chúng tôi kiến tạo không gian kiến trúc độc bản sang trọng bậc nhất.</p>
-                <div><a class="btn btn-gold" href="pages/Danhmuc.html">Xem Danh Mục</a></div>
-            </div>
-        </div>
+    <main id="main-content">
+
+        <!-- Nội dung trang được Router tải vào -->
+
     </main>
 
-   <footer>
-    <div class="footer-grid">
-        <div class="footer-brand">
-            <a href="index.html" class="logo">i<span>DECOR</span></a>
-            <p class="brand-desc">iDECOR tự hào là đơn vị kiến tạo không gian sống sang trọng, mang nghệ thuật kiến trúc tối giản và nội thất cao cấp tới mọi gia đình Việt.</p>
-            <div class="customer-trust">
-                <div class="avatar-group-css">
-                    <div class="avatar-css av-1">QA</div>
-                    <div class="avatar-css av-2">MT</div>
-                    <div class="avatar-css av-3">ĐN</div>
-                </div>
-                <div class="trust-text"><span>10.000+</span> Khách hàng tin tưởng</div>
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#/trang-chu" class="logo">
+                    i<span>DECOR</span>
+                </a>
+
+                <p>
+                    iDECOR mang đến giải pháp nội thất hiện đại,
+                    tối giản và sang trọng cho mọi không gian sống.
+                </p>
+
             </div>
+
+            <div class="footer-column">
+
+                <h4>Về Chúng Tôi</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#/gioi-thieu">
+                            Giới Thiệu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Điều Khoản Dịch Vụ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Chính Sách Bảo Mật
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Sản Phẩm</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#/san-pham">
+                            Nội Thất Phòng Khách
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#/san-pham">
+                            Nội Thất Phòng Ngủ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#/san-pham">
+                            Nội Thất Văn Phòng
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Liên Hệ</h4>
+
+                <ul>
+
+                    <li>
+                        📍 Hà Nội, Việt Nam
+                    </li>
+
+                    <li>
+                        📞 0987 123 456
+                    </li>
+
+                    <li>
+                        ✉️ contact@idecor.vn
+                    </li>
+
+                </ul>
+
+            </div>
+
         </div>
 
-        <div class="footer-col">
-            <h4>Về Chúng Tôi</h4>
-            <ul>
-                <li><a href="pages/Gioithieu.html">Giới thiệu công ty</a></li>
-                <li><a href="#">Điều khoản dịch vụ</a></li>
-                <li><a href="#">Chính sách bảo mật</a></li>
-            </ul>
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 iDECOR. All Rights Reserved.
+            </p>
+
         </div>
 
-        <div class="footer-col">
-            <h4>Sản Phẩm</h4>
-            <ul>
-                <li><a href="pages/Danhmuc.html#minimalist">Bộ Sưu Tập Minimalist</a></li>
-                <li><a href="pages/Danhmuc.html#scandinavian">Bộ Sưu Tập Bắc Âu</a></li>
-            </ul>
-        </div>
+    </footer>
 
-        <div class="footer-col">
-            <h4>Liên Hệ Trụ Sở</h4>
-            <ul>
-                <li class="contact-item">📍 25 Nguyễn Khuyến, Đống Đa, Hà Nội</li>
-                <li class="contact-item">📞 0987 123 456</li>
-                <li class="contact-item">✉️ contact@idecor.vn</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer-bottom-wrapper">
-        <div class="footer-copyright">&copy; 2026 iDECOR. All rights reserved.</div>
-        <ul class="footer-commitments">
-            <li>Giao hàng nhanh chóng</li>
-            <li>Phản hồi kịp thời</li>
-            <li>Uy tín chất lượng</li>
-        </ul>
-    </div>
-</footer>
-    
+    <script src="./scripts.js"></script>
 
 </body>
+
 </html>

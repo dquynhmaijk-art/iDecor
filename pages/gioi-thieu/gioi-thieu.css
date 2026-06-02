@@ -1,0 +1,334 @@
+/* About Hero */
+
+.about-hero{
+    padding:120px 0;
+    text-align:center;
+    background:var(--surface);
+}
+
+.about-hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.about-hero p{
+    max-width:700px;
+    margin:auto;
+    color:var(--text-light);
+    line-height:1.8;
+}
+
+/* About Content */
+
+.about-text{
+    max-width:900px;
+    margin:auto;
+}
+
+.about-text h2{
+    margin-bottom:24px;
+}
+
+.about-text p{
+    margin-bottom:20px;
+    line-height:1.9;
+    text-align:justify;
+}
+
+/* Mission */
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.mission-card{
+    background:var(--surface);
+    padding:30px;
+    border-radius:12px;
+    box-shadow:var(--shadow);
+}
+
+.mission-card h3{
+    margin-bottom:15px;
+    color:var(--primary);
+}
+
+/* Values */
+
+.value-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.value-card{
+    background:var(--surface);
+    padding:30px;
+    border-radius:12px;
+    box-shadow:var(--shadow);
+}
+
+.value-card h3{
+    margin-bottom:15px;
+    color:var(--primary);
+}
+
+.value-card p{
+    line-height:1.8;
+}
+
+/* Process */
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.process-card{
+    background:var(--surface);
+    padding:30px 20px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:var(--shadow);
+}
+
+.process-card span{
+    display:block;
+    font-size:32px;
+    font-weight:700;
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+/* Stats */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.stat-card{
+    background:var(--surface);
+    padding:40px 20px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:var(--shadow);
+}
+
+.stat-card h3{
+    font-size:40px;
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+/* CTA */
+
+.about-cta{
+    text-align:center;
+}
+
+.about-cta h2{
+    margin-bottom:20px;
+}
+
+.about-cta p{
+    max-width:700px;
+    margin:0 auto 30px;
+    color:var(--text-light);
+    line-height:1.8;
+}
+
+/* Responsive Mobile */
+
+@media (max-width:768px){
+
+    .about-hero{
+        padding:80px 0;
+    }
+
+    .about-hero h1{
+        font-size:36px;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+/* Popup Tư Vấn */
+
+.consult-modal {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    z-index: 9999;
+
+    padding: 20px;
+}
+
+
+/* Nội Dung Popup */
+
+.consult-modal-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 600px;
+
+    background: #fff;
+
+    border-radius: 16px;
+
+    padding: 32px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    animation: popupFadeIn 0.3s ease;
+}
+
+.consult-modal-content h2 {
+    margin-bottom: 10px;
+
+    font-size: 28px;
+
+    color: var(--text-color);
+}
+
+.consult-modal-content p {
+    margin-bottom: 24px;
+
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* Nút Đóng Popup */
+
+.consult-close {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    color: #666;
+
+    transition: 0.3s;
+}
+
+.consult-close:hover {
+    color: var(--primary-color);
+}
+
+
+/* Nhóm Input */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+}
+
+
+/* Input Và Textarea */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+/* Nút Gửi Yêu Cầu */
+
+#consultForm .btn {
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+
+/* Hiệu Ứng Popup */
+
+@keyframes popupFadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .consult-modal-content {
+
+        max-height: 90vh;
+
+        overflow-y: auto;
+
+        padding: 24px;
+    }
+
+    .consult-modal-content h2 {
+        font-size: 24px;
+    }
+
+}
