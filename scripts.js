@@ -14,6 +14,7 @@ const routes = {
     "/reset-mk": "reset-mk",
     "/doi-mat-khau": "doi-mat-khau",
     "/thanh-toan": "thanh-toan",
+    "/dieu-khoan": "dieu-khoan",
 };
 
 /* Biến toàn cục */
